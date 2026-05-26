@@ -42,7 +42,7 @@ task-tracker/
 ### 1. Clone the project
 ```bash
 git clone https://github.com/VivekAggarwal07/task_tracker
-cd task-tracker 
+cd task_tracker 
 ```
 ### 2. Run the program
 ```bash
