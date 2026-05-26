@@ -25,15 +25,15 @@ It allows users to add, view, update, and delete tasks with persistent JSON stor
 ---
 
 ## Project Structure
-
-task-tracker/
+```
+task_tracker/
 │
-├── main.py
-├── task_manager.py
-├── storage.py
-├── tasks.json
-└── README.md
-
+├── main.py # CLI entry point
+├── task_manager.py # Functions to add, delete, mark complete
+├── storage.py # Functions to read/write JSON file
+├── tasks.json # Stores task data
+└── README.md # Instructions &amp; how to run
+```
 
 ---
 
@@ -41,8 +41,8 @@ task-tracker/
 
 ### 1. Clone the project
 ```bash
-git clone <your-repo-link>
-cd task-tracker 
+git clone https://github.com/VivekAggarwal07/task_tracker
+cd task_tracker 
 ```
 ### 2. Run the program
 ```bash
