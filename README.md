@@ -16,7 +16,7 @@ It allows users to add, view, update, and delete tasks with persistent JSON stor
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Python 3
 - JSON (for data storage)
@@ -24,7 +24,7 @@ It allows users to add, view, update, and delete tasks with persistent JSON stor
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 task-tracker/
 │
@@ -42,7 +42,9 @@ task-tracker/
 ### 1. Clone the project
 ```bash
 git clone <your-repo-link>
-cd task-tracker
-
+cd task-tracker 
+```
 ### 2. Run the program
+```bash
 python main.py
+```
