@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "work on project",
+        "description": "complete the project",
+        "due_date": "2026-05-30",
+        "status": "pending"
+    },
+    {
+        "id": 2,
+        "title": "assignment",
+        "description": "complete the assignment",
+        "due_date": "2026-05-29",
+        "status": "pending"
+    }
+]
