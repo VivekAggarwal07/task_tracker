@@ -16,8 +16,8 @@ def main():
 
         if choice == '1':
 
-            while True:
-                title = input("Enter a task: ").strip()
+            while True:  # task title validation 
+                title = input("Enter a task: ").strip() 
 
                 if title:
                       break
@@ -25,18 +25,21 @@ def main():
 
             desc = input("Enter a description: ")
 
-            while True:
+            while True: # due date validation
                 due_date = input("Enter a due date (YYYY-MM-DD): ")
 
                 if validate_date(due_date):
                     break
                 print("Invalid date format. Please use YYYY-MM-DD.")
-            add_task(title,desc,due_date)
+
+            add_task(title,desc,due_date) # adding task to the list
             print("Task added successfully!")
         
         elif choice == '2':
-            tasks = sort_tasks_by_due_date()
+
+            tasks = sort_tasks_by_due_date() # sorting tasks by due date before displaying
             print("\nTasks(Sorted by due date):")
+
             if not tasks:
                 print("No tasks found.")
             else:
@@ -49,12 +52,15 @@ def main():
                     print("-" * 20)
 
         elif choice == "3":
-            try:
-                task_id = int(input("Enter the ID of the task to update: "))
+
+            try: # task ID validation
+                task_id = int(input("Enter the ID of the task to update: ")) 
             except ValueError:
                 print("Invalid input. Please enter a valid task ID.")
                 continue
-            result = mark_complete(task_id)
+
+            result = mark_complete(task_id) # marking the task as completed based on the provided ID
+
             if result:
                 print("Task marked as completed!")
             else:
@@ -62,18 +68,22 @@ def main():
 
         
         elif choice == "4":
+
             try:
                 task_id = int(input("Enter the ID of the task to delete: "))
             except ValueError:
                 print("Invalid input. Please enter a valid task ID.")
                 continue
-            result = delete_task(task_id)
+
+            result = delete_task(task_id) #deleting the task 
+
             if result:
                 print("Task deleted successfully!")
             else:
                 print("Task not found.")
 
         elif choice == '5':
+
             print("Thank you for using the Task Tracker. Goodbye!")
             break
 
